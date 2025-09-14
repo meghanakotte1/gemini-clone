@@ -1,3 +1,141 @@
 .main {
-  background: red !important;
+  flex:1;
+  overflow-y: auto;
+  min-height: 100vh;
+  padding-bottom: 15vh;
+  position: relative;
+}
+
+.main .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  padding:20px;
+  color:#585858
+}
+.main .nav img{
+  width: 40px;
+  border-radius: 50%;
+}
+.main-character{
+  flex:1;
+   
+   max-width: 900px;
+   margin: auto;
+}
+.main .greet{
+ 
+  margin: 10px 0px;
+  font-size: 30px;
+  color: #c4c7c5;
+  font-weight: 500;
+  padding: 40px 20px;
+  padding-top: 30px;
+
+}
+.main .greet span{
+  background:  -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.main .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 15px;
+  padding: 40px 20px;
+  padding-top: 70px;
+  margin-top: 0px;
+}
+.main .card{
+  height: 150px;
+  padding: 15px;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  
+}
+.main .card img{
+  width: 35px;
+  padding: 5px;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+}
+.main .card p{
+  color: #585858;
+  font-size: 17px;
+}
+.main .card:hover{
+  background-color: #dfe4ea;
+
+}
+.main .main-bottom{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  max-width:900px;
+  padding: 0px 20px;
+  margin: auto;
+}
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: #f0f4f9;
+  padding: 10px 20px;
+  border-radius:50px;
+}
+/*.search-box img{
+  width: 18px;
+  object-fit: contain;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+
+}
+  */
+  .icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 50%; /* allows circular hover effect */
+  padding: 4px;
+}
+
+.icon:hover {
+  background-color: #e0e0e0; /* light gray background */
+  transform: scale(1.1);     /* slight zoom */
+}
+
+.search-box input{
+  flex:1;
+  background:transparent;
+  outline: none;
+  border: none;
+  padding:6px;
+  font-size:16px;
+
+
+}
+.search-box div{
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+.bottom-info {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  background: #fff;     /* optional so text doesn’t overlap cards when scrolling */
+  padding: 4px 0;
+  position: sticky;
+  bottom: 0;
 }

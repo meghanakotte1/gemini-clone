@@ -21,10 +21,10 @@
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
-    background-color: #645d63;
+    background-color: #d6d3d6;
     border-radius: 50px;
     font-size:14px;
-    color: rgb(74, 73, 73);
+    color: rgb(125, 123, 123);
     cursor: pointer;
 
 }
