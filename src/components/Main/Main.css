@@ -92,7 +92,8 @@
   border-radius:50px;
 }
 /*.search-box img{
-  width: 18px;
+  width: 18px
+  gap;
   object-fit: contain;
   height: 20px;
   cursor: pointer;
